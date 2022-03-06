@@ -1,9 +1,9 @@
 import { IFileSystem } from '@gratico/fs'
-import { EventEmitter as EventEmitter2, IEventEmitter } from '@oss-stealth/utils/dist/co/emitter'
-import { ICSPChannel } from '@oss-stealth/utils/dist/co/buffers'
+import { IEventEmitter } from '../specs/emitter'
+import EventEmitter2 from 'emittery'
+
 import { IBusNode, IRouteServer, IRouteHandler } from '@gratico/subway'
 import { BroadcastChannel } from 'broadcast-channel'
-import pubble from 'pubble'
 
 // todo remove these unused
 import { IProject, IRepository, IUser } from './business'
@@ -63,7 +63,6 @@ export interface IKernel {
 
 	env: IEnvironmentVariables
 	fs: IFileSystem
-	csp: Map<unknown, ICSPChannel>
 	server: IRouteServer<IKernel, unknown>
 	extensions: IKernelExtension[]
 }

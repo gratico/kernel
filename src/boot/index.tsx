@@ -6,10 +6,10 @@ import { IRequest, IResponse, IRouteHandlerRequest, IRouteHandler, IRouteHandler
 import { Method } from 'tiny-request-router'
 import { FS } from '@gratico/fs'
 
-import { IEventEmitter, EventEmitter } from '@oss-stealth/utils/dist/co/emitter'
+import { IEventEmitter } from '../specs/emitter'
+import EventEmitter from 'emittery'
 import { Router } from 'tiny-request-router'
 import { BroadcastChannel, createLeaderElection } from 'broadcast-channel'
-import pubble from 'pubble'
 
 import { loadFilesystem } from './utils/index'
 
@@ -96,17 +96,12 @@ export async function kernelFactory(props: KernelProps): Promise<IKernel> {
   const sharedStores = new Map()
   //  const channel = new BroadcastChannel(config.project.id)
   //  const elector = createLeaderElection(channel)
-  const meta = pubble<IKernelMeta>({
-    peers: {},
-    leader: false,
-    id: loci.id,
-    parentId: loci.parentId,
-  })
+  const meta = {}
   const kernel: IKernel = {
     fs,
     bus,
     channel: null as any,
-    meta,
+    meta: meta as any,
     cache: new Map(),
     env,
     config,
@@ -119,7 +114,6 @@ export async function kernelFactory(props: KernelProps): Promise<IKernel> {
       viewport: new EventEmitter(),
     },
     server,
-    csp: new Map(),
   }
   //  elector.awaitLeadership().then(() => {
   //    console.log('this tab is now leader')

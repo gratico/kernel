@@ -31,7 +31,11 @@
     "@gratico/atom": "^0.1.2",
     "@gratico/bodhi": "^0.8.3",
     "@gratico/fs": "^0.8.3",
-    "@gratico/subway": "0.8.4"
+    "@gratico/subway": "0.8.4",
+    "broadcast-channel": "^4.10.0",
+    "pify": "^5.0.0",
+    "tiny-request-router": "^1.2.2",
+    "uuid": "^8.3.2"
   },
   "peerDependencies": {},
   "devDependencies": {

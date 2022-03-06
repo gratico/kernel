@@ -1,6 +1,8 @@
 import { v4 } from 'uuid'
 import { IKernel } from '../specs'
-import { EventEmitter as KernelEventEmitter } from '@oss-stealth/utils/dist/co/emitter'
+import { IEventEmitter } from '../specs/emitter'
+import KernelEventEmitter from 'emittery'
+
 import { kernelFactory } from './index'
 import { createIndexedDBAdapter as createAdapter } from '@gratico/fs'
 import { IRouteHandler } from '@gratico/subway'
