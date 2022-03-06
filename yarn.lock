@@ -1488,6 +1488,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.21.tgz#864b987c0c68d07b4345845c3e63b75edd143644"
   integrity sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==
 
+"@types/pify@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@types/pify/-/pify-5.0.1.tgz#10e398a89e3740dd5c316c502acad9ea5e444d3f"
+  integrity sha512-UYcJBAqWLyg+eITXGIu9DR7RXJFvSupz+Hf+RqJYHzDJedvDMTsB1JmDV6Qfna2g62VIxUKvoWqTxGHy6U/bLA==
+
 "@types/prettier@^2.1.5":
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.4.4.tgz#5d9b63132df54d8909fce1c3f8ca260fdd693e17"
@@ -1502,6 +1507,11 @@
   version "2.0.0"
   resolved "https://registry.npmjs.org/@types/stack-utils/-/stack-utils-2.0.0.tgz#7036640b4e21cc2f259ae826ce843d277dad8cff"
   integrity sha512-RJJrrySY7A8havqpGObOB4W92QXKJo63/jFLLgpvOtsGUqbQZ9Sbgl35KMm1DjC6j7AvmmU2bIno+3IyEaemaw==
+
+"@types/uuid@^8.3.4":
+  version "8.3.4"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
+  integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
 
 "@types/yargs-parser@*":
   version "15.0.0"
@@ -3316,11 +3326,6 @@ psl@^1.1.33:
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.8.0.tgz#9326f8bcfb013adcc005fdff056acce020e51c24"
   integrity sha512-RIdOzyoavK+hA18OGGWDqUTsCLhtA7IcZ/6NCs4fFJaHBDab+pDDmDIByWFRQJq2Cd7r1OoQxBGKOaztq+hjIQ==
 
-pubble@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/pubble/-/pubble-2.0.1.tgz#ae146aaff59b6f6ffe247e04ebc39e260254cb15"
-  integrity sha512-CijlwyfiFtqTBN+J4ZldFN86qSy4a6jUH2GRMvh3NeDE1CRu61n8GVnNtJqJKfYxCVM7VBKN4aKb32+EWvboaA==
-
 punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
@@ -3697,6 +3702,11 @@ tr46@^2.1.0:
   integrity sha512-15Ih7phfcdP5YxqiB+iDtLoaTz4Nd35+IiAv0kQ5FNKHzXgdWqPoTIqEDDJmXceQt4JZk6lVPT8lnDlPpGDppw==
   dependencies:
     punycode "^2.1.1"
+
+tree-crawl@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tree-crawl/-/tree-crawl-1.1.0.tgz#3c5e704b59eec45eb8226ddd302a409d76cd28bb"
+  integrity sha512-pQfQTKBYEJhA3kIV8fL1rJJR8hgVzgX4u4IJi1EjnEch8BOUC+KQsuPMD6Pf017Sc8XD64WaA4q8840XhsIrIA==
 
 type-check@~0.3.2:
   version "0.3.2"
